@@ -33,10 +33,9 @@ El objetivo del proyecto es automatizar distintas pruebas funcionales de una apl
 
 | Test | Descripcion |
 |------|-------------|
-| test_login_validation | Valida que el inicio de sesion redirija correctamente al inventario |
-| test_inventory_title | Verifica que el titulo de la pagina sea "Swag Labs" |
-| test_productos_visibles | Confirma que se carguen productos en el catalogo |
-| test_ui_elements | Valida la visibilidad del menu y filtro de productos |
+| test_login | Valida que el inicio de sesion redirija correctamente al inventario |
+| test_inventory | Verifica que el titulo de la pagina sea "Swag Labs" |
+| test_api | Valida las pruebas de api |
 | test_cart | Verifica el flujo completo de agregar un producto al carrito |
 
 ### Validaciones
@@ -45,7 +44,7 @@ El objetivo del proyecto es automatizar distintas pruebas funcionales de una apl
 - **Inventario**: Titulo correcto, productos cargados, elementos de UI visibles
 - **Carrito**: Contador muestra "1", nombre del producto coincide con el seleccionado
 
-### Ejecucion de pruebas
+## Ejecución de pruebas
 
 ```bash
 # Ejecutar todas las pruebas
@@ -54,10 +53,14 @@ pytest
 # Ejecutar todas las pruebas con reporte HTML
 pytest --html=report.html
 
-# Ejecutar una prueba especifica
+# Ejecutar una prueba específica
 pytest test/test_cart.py
 
-# Ejecutar con verbose
+# Ejecutar únicamente las pruebas de API
+pytest -m api
+
+# Ejecutar las pruebas en modo verbose
 pytest -v
-``` 
+```
+
 
