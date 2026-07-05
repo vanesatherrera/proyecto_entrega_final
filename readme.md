@@ -20,7 +20,7 @@ Proyecto de automatización de pruebas funcionales y de API para la aplicación 
 ## Instalación
 
 ```bash
-git clone https://github.com/vanesatherrera/Entrega_QA_Automation.git
+git clone https://github.com/vanesatherrera/proyecto_entrega_final.git
 ```
 
 ```bash
